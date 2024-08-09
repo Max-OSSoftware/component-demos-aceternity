@@ -1,1 +1,1 @@
-## Ocean Component Library
+## Component Library
