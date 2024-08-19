@@ -47,7 +47,8 @@ const components: { title: string; href: string }[] = [
 ]
 
 export default function Navigation() {
-  const [open, setOpen] = React.useState(false)
+  const [mobileOpen, setMobileOpen] = React.useState(false)
+  const [desktopOpen, setDesktopOpen] = React.useState(false)
   const [search, setSearch] = React.useState('')
   const pathname = usePathname()
 
@@ -55,9 +56,14 @@ export default function Navigation() {
     component.title.toLowerCase().includes(search.toLowerCase())
   )
 
+  const handleLinkClick = () => {
+    setMobileOpen(false)
+    setDesktopOpen(false)
+  }
+
   return (
     <div className="flex h-16 items-center px-4 border-b">
-      <Sheet open={open} onOpenChange={setOpen}>
+      <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
         <SheetTrigger asChild>
           <Button variant="outline" size="icon" className="lg:hidden">
             <MenuIcon className="h-4 w-4" />
@@ -82,7 +88,7 @@ export default function Navigation() {
                   <Link
                     key={component.href}
                     href={component.href}
-                    onClick={() => setOpen(false)}
+                    onClick={handleLinkClick}
                     className={cn(
                       "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
                       pathname === component.href && "bg-accent text-accent-foreground"
@@ -113,7 +119,7 @@ export default function Navigation() {
               {component.title}
             </Link>
           ))}
-          <Sheet>
+          <Sheet open={desktopOpen} onOpenChange={setDesktopOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" className="font-medium">
                 More
@@ -125,6 +131,7 @@ export default function Navigation() {
                   <Link
                     key={component.href}
                     href={component.href}
+                    onClick={handleLinkClick}
                     className={cn(
                       "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
                       pathname === component.href && "bg-accent text-accent-foreground"
