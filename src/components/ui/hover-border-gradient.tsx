@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 
 type Direction = "TOP" | "LEFT" | "BOTTOM" | "RIGHT";
 
-export function HoverBorderGradient({
+export default function HoverBorderGradient({
   children,
   containerClassName,
   className,

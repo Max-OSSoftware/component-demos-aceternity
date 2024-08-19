@@ -168,7 +168,7 @@ export const FileUpload = ({
   );
 };
 
-export function GridPattern() {
+export default function GridPattern() {
   const columns = 41;
   const rows = 11;
   return (

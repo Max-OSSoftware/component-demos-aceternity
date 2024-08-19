@@ -35,7 +35,7 @@ export default function FocusCard() {
   ];
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-10  max-w-5xl mx-auto px-8 w-full">
+    <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-10  max-w-5xl mx-auto px-8 w-full">
       {cards.map((card, index) => (
         <motion.div
           key={card.title}
