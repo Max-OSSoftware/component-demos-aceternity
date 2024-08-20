@@ -14,7 +14,7 @@ import { ThemeToggle } from '@/components/ThemeToggle'
 const components: { title: string; href: string }[] = [
   { title: 'Wobble Card', href: '/wobble-card' },
   { title: 'Typewriter Effect', href: '/typewriter-effect' },
-  { title: 'Sticky Scroll', href: '/sticky-scroll-reveal' },
+  { title: 'Aurora Background', href: '/aurora-background' },
   { title: 'Wavy Background', href: '/wavy-background' },
   { title: 'Hero Parallax', href: '/hero-parallax' },
   { title: 'Bento Grid', href: '/bento-grid' },
