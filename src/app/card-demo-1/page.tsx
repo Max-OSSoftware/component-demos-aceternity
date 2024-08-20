@@ -3,6 +3,7 @@ import { cn } from "@/lib/utils";
 
 export default function CardDemo() {
   return (
+    <main className="flex min-h-screen flex-col items-center mt-20 justify-between p-0">
     <div className="max-w-xs w-full">
       <div
         className={cn(
@@ -26,5 +27,6 @@ export default function CardDemo() {
         </div>
       </div>
     </div>
+    </main>
   );
 }

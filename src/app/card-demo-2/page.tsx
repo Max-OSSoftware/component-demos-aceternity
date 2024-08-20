@@ -4,6 +4,7 @@ import Image from "next/image";
 
 export default function CardDemo() {
   return (
+    <main className="mt-20 flex min-h-screen flex-col items-center justify-between p-0">
     <div className="max-w-xs w-full group/card">
       <div
         className={cn(
@@ -38,5 +39,6 @@ export default function CardDemo() {
         </div>
       </div>
     </div>
+    </main>
   );
 }

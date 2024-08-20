@@ -6,7 +6,7 @@ import { GoCopilot } from "react-icons/go";
 
 export default function CardDemo() {
   return (
-    <Card>
+    <Card className="mt-20">
       <CardSkeletonContainer>
         <Skeleton />
       </CardSkeletonContainer>
@@ -73,7 +73,9 @@ const Skeleton = () => {
     });
   }, []);
   return (
+    
     <div className="p-8 overflow-hidden h-full relative flex items-center justify-center">
+      <div className="mt-0">
       <div className="flex flex-row flex-shrink-0 justify-center items-center gap-2">
         <Container className="h-8 w-8 circle-1">
           <ClaudeLogo className="h-4 w-4 " />
@@ -96,6 +98,7 @@ const Skeleton = () => {
         <div className="w-10 h-32 top-1/2 -translate-y-1/2 absolute -left-10">
           <Sparkles />
         </div>
+      </div>
       </div>
     </div>
   );

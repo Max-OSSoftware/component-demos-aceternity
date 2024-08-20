@@ -9,6 +9,7 @@ import { ScrollArea } from '@/components/ui/scroll-area'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import { Input } from '@/components/ui/input'
 import { MenuIcon, SearchIcon } from 'lucide-react'
+import { ThemeToggle } from '@/components/ThemeToggle'
 
 const components: { title: string; href: string }[] = [
   { title: 'Wobble Card', href: '/wobble-card' },
@@ -72,7 +73,7 @@ export default function Navigation() {
         </SheetTrigger>
         <SheetContent side="left" className="w-[300px] sm:w-[400px]">
           <nav className="flex flex-col gap-4">
-            <h2 className="text-lg font-semibold">Navigation</h2>
+          
             <div className="relative">
               <SearchIcon className="absolute left-2 top-2.5 h-4 w-4 text-muted-foreground" />
               <Input
@@ -125,6 +126,7 @@ export default function Navigation() {
                 More
               </Button>
             </SheetTrigger>
+            <ThemeToggle />
             <SheetContent side="top" className="w-full">
               <nav className="grid grid-cols-3 gap-4 py-4">
                 {components.slice(5).map((component) => (

@@ -53,8 +53,10 @@ const content = [
 ];
 export default function StickyScrollRevealDemo() {
   return (
+    // <main className="mt-20 flex min-h-screen flex-col items-center justify-between p-0">
     <div className="p-10">
       <StickyScroll content={content} />
     </div>
+    // </main>
   );
 }
