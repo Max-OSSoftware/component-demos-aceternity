@@ -2,4 +2,4 @@
 
 ### component-library-demos-aceternity
 
-<img src="readmeImages/demo.png" /><img src="readmeImages/demos.png />
+<img src="readmeImages/demo.png" /><img src="readmeImages/demos.png" />
