@@ -41,7 +41,7 @@ const components: { title: string; href: string }[] = [
   { title: 'Card Demo 1', href: '/card-demo-1' },
   { title: 'Card Demo 2', href: '/card-demo-2' },
   { title: 'Card Demo 3', href: '/card-demo-3' },
-  { title: 'Buttons', href: '/buttons' },
+  { title: 'Apple Demo', href: '/apple-demo' },
   { title: 'Bento Grid 2', href: '/bento-grid-2' },
   { title: 'Vortex', href: '/vortex' },
   { title: 'Background Beams', href: '/background-beams' },
