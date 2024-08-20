@@ -12,11 +12,12 @@ import { MenuIcon, SearchIcon } from 'lucide-react'
 
 const components: { title: string; href: string }[] = [
   { title: 'Wobble Card', href: '/wobble-card' },
+  { title: 'Typewriter Effect', href: '/typewriter-effect' },
+  { title: 'Sticky Scroll', href: '/sticky-scroll-reveal' },
   { title: 'Wavy Background', href: '/wavy-background' },
   { title: 'Hero Parallax', href: '/hero-parallax' },
   { title: 'Bento Grid', href: '/bento-grid' },
-  { title: 'Sticky Scroll', href: '/sticky-scroll-reveal' },
-  { title: 'Typewriter Effect', href: '/typewriter-effect' },
+  { title: 'Moving Cards', href: '/moving-cards' },
   { title: 'Typewriter Effect Two', href: '/typewriter-effect-two' },
   { title: 'Text Generate Effect', href: '/text-generate-effect' }, 
   { title: 'Spotlight', href: '/spotlight' },
@@ -26,7 +27,6 @@ const components: { title: string; href: string }[] = [
   { title: 'Scroll Animate', href: '/scroll-animate' },
   { title: 'Parallax Scroll 2', href: '/parallax-scroll-2' },
   { title: 'Parallax Scroll', href: '/parallax-scroll' },
-  { title: 'Moving Cards', href: '/moving-cards' },
   { title: 'Meteors', href: '/meteors' },
   { title: 'Macbook Scroll', href: '/macbook-scroll' },
   { title: 'Layout Grid 2', href: '/layout-grid-2' },
