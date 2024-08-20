@@ -6,7 +6,7 @@ import { GoCopilot } from "react-icons/go";
 
 export default function CardDemo() {
   return (
-    <Card className="mt-20">
+    <Cards className="mt-20">
       <CardSkeletonContainer>
         <Skeleton />
       </CardSkeletonContainer>
@@ -15,7 +15,7 @@ export default function CardDemo() {
         A card that showcases a set of tools that you use to create your
         product.
       </CardDescription>
-    </Card>
+    </Cards>
   );
 }
 
@@ -139,7 +139,7 @@ const Sparkles = () => {
   );
 };
 
-export const Card = ({
+export const Cards = ({
   className,
   children,
 }: {
