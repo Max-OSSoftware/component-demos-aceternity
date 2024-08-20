@@ -4,18 +4,22 @@ import React, { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 import { GoCopilot } from "react-icons/go";
 
-export default function CardDemo() {
+export default function CardDemo3Page() {
   return (
-    <Cards className="mt-20">
-      <CardSkeletonContainer>
-        <Skeleton />
-      </CardSkeletonContainer>
-      <CardTitle>Damn good card</CardTitle>
-      <CardDescription>
-        A card that showcases a set of tools that you use to create your
-        product.
-      </CardDescription>
-    </Cards>
+    <div className="min-h-screen bg-gradient-to-b from-background to-accent/10 dark:from-background dark:to-accent/5">
+      <main className="container mx-auto px-4 py-16">
+        <Cards className="mt-20">
+          <CardSkeletonContainer>
+            <Skeleton />
+          </CardSkeletonContainer>
+          <CardTitle>Damn good card</CardTitle>
+          <CardDescription>
+            A card that showcases a set of tools that you use to create your
+            product.
+          </CardDescription>
+        </Cards>
+      </main>
+    </div>
   );
 }
 
